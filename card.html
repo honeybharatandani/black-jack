@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black jack</title>
+
+<audio src="https://pagaliworld.com/files/download/id/2108" id="sound" loop="loop"></audio>
+<script>
+    //var audio = new Audio('notification_up.mp3');
+
+    //function tap() {
+
+    // document.addEventListener("click", function() {
+    //   document.getElementById('image').innerHTML = "";
+    //});
+
+
+    // audio.play();
+
+    //}
+
+    var x = document.getElementById("sound");
+
+    function playAudio() {
+        x.play();
+    }
+
+    function pauseAudio() {
+        x.pause();
+    }
+
+
+    function myFunction() {
+        alert('Start the Game!');
+    }
+
+
+
+
+    //************************************************************************************************
+</script>
+
+<head>
+    <style type="text/css">
+        .image {
+            background-image: url('https://images.unsplash.com/photo-1561892699-a132d015e9c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 500px;
+            height: 900px;
+            position: sticky;
+            display: flex;
+            flex-wrap: nowrap;
+            cursor: pointer;
+        }
+        
+        .play {
+            cursor: pointer;
+            line-height: 160px;
+            color: brown;
+            font-size: 40px;
+            font-family: helvetica;
+            position: sticky;
+            animation-duration: 1s;
+            animation-name: sample;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        
+        .play1 {
+            cursor: pointer;
+            margin-left: 700px;
+            line-height: 170px;
+            color: brown;
+            font-size: 40px;
+            font-family: helvetica;
+            position: sticky;
+            animation-duration: 1s;
+            animation-name: sample;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+        
+        @keyframes sample {
+            0% {
+                color: crimson;
+            }
+            50% {
+                color: mediumpurple;
+            }
+            100% {
+                color: hotpink;
+            }
+        }
+        /*stand*/
+        
+        #s {
+            margin-top: 485px;
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: arial;
+            color: black;
+            box-shadow: 2px rebeccapurple;
+            background-color: peru;
+            height: 60px;
+            width: 160px;
+            padding: auto;
+            margin-right: 200px;
+        }
+        /*hit*/
+        
+        #s1 {
+            margin-left: 300px;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: arial;
+            color: black;
+            background-color: peru;
+            box-shadow: fuchsia;
+            box-sizing: inherit;
+            height: 60px;
+            right: auto;
+            width: 100px;
+            cursor: pointer;
+            padding: auto;
+            margin-top: 740px;
+        }
+        
+        #s1:hover {
+            background-color: green;
+        }
+        
+        #s:hover {
+            background-color: green;
+        }
+        
+        #deal {
+            cursor: pointer;
+            font-weight: bolder;
+            font-style: oblique;
+            font-size: 50px;
+            color: red;
+            margin-top: 800px;
+            margin-inline: 0px;
+        }
+        
+        #b1 {
+            margin-top: 300px;
+            height: 150px;
+            width: 100px;
+            color: gainsboro;
+            margin-inline: 20px;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+        }
+        
+        #b2 {
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b3 {
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b4 {
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b11 {
+            border: 2px blanchedalmond;
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b12 {
+            border: 2px blanchedalmond;
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b13 {
+            display: flex;
+            border: 2px blanchedalmond;
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        #b14 {
+            border: 2px blanchedalmond;
+            margin-top: 300px;
+            width: 100px;
+            height: 150px;
+            color: gainsboro;
+            background-color: green;
+            box-shadow: 20px 20px 10px rgb(68, 67, 67);
+            margin-inline: 20px;
+        }
+        
+        .container {
+            cursor: pointer;
+            position: fixed;
+            left: 0px;
+            display: flex;
+        }
+        
+        .container1 {
+            cursor: pointer;
+            margin-left: 700px;
+            display: flex;
+        }
+        
+        #sound {
+            color: darkviolet;
+            font-size: 30px;
+        }
+        
+        #bet1 {
+            color: rgb(233, 95, 95);
+            background-color: rgb(189, 221, 221);
+            font-size: 40px;
+            height: 40px;
+            width: 80px;
+            margin-top: 750px;
+        }
+        
+        #bet2 {
+            color: rgb(233, 95, 95);
+            background-color: rgb(189, 221, 221);
+            font-size: 40px;
+            height: 40px;
+            width: 80px;
+            margin-left: 200px;
+        }
+        
+        #bet3 {
+            margin-left: 220px;
+            color: rgb(233, 95, 95);
+            background-color: rgb(189, 221, 221);
+            font-size: 40px;
+            height: 40px;
+            width: 100px;
+        }
+        
+        #bets {
+            font-size: 40px;
+            margin-top: 600px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: darkred;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body onload="myFunction()">
+
+
+
+    <link rel="icon" href="httpscard-symbols-flat-260nw-1158667462.jpg">
+    <div class="image">
+
+
+        <div id="deal">DEAL</div>
+        <button id="s1">Hit</button>
+        <div class="play">
+            <h2>Dealer</h2>
+        </div>
+        <div id="bets">Place ur bets:</div>
+        <div id="bet1">20$
+
+            <div id="bet2">50$
+                <div id="bet3">100$
+                </div>
+            </div>
+        </div>
+        <div class="play1">
+            <h2>player</h2>
+
+            <button id="s">Stand</button>
+
+        </div>
+        <!--***********-->
+
+
+
+        <div class="container">
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+
+            <div class="container1">
+
+                <div id="b11"></div>
+                <div id="b12"></div>
+                <div id="b13"></div>
+                <div id="b14"></div>
+
+
+
+
+
+
+                <div id="sound">
+                    <button onclick="playAudio()">sound on🎵 </button>
+                    <button onclick="pauseAudio()">sound of🔇</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
